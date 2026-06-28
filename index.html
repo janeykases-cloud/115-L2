@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>校園規範和班級自治｜學生預習自學網頁</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">國小三年級社會｜預習任務</p>
+      <h1>校園規範和班級自治</h1>
+      <p class="lead">用 20 分鐘先認識規範、班會和民主討論，下一堂課就能一起設計更好的班級生活。</p>
+    </div>
+    <div class="hero-side">
+      <div class="hero-illustration" aria-label="班級規範改善任務圖像">
+        <div class="board">
+          <strong>提案內容</strong>
+          <span>1. 發現問題</span>
+          <span>2. 蒐集意見</span>
+          <span>3. 設計規範</span>
+        </div>
+        <div class="vote-card">
+          <strong>班會表決</strong>
+          <div><span class="yes">○</span><span class="no">×</span></div>
+        </div>
+        <div class="student chair">主席</div>
+        <div class="student s1">安全</div>
+        <div class="student s2">公平</div>
+        <div class="student s3">傾聽</div>
+        <div class="student s4">互助</div>
+      </div>
+      <div class="status-panel" aria-label="學習進度">
+        <span>我的預習進度</span>
+        <strong id="progressText">0 / 5</strong>
+        <div class="progress-track"><div id="progressBar"></div></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <nav class="quick-nav" aria-label="自學步驟">
+      <a href="#mission">任務</a>
+      <a href="#learn">重點</a>
+      <a href="#check">小測驗</a>
+      <a href="#meeting">班會流程</a>
+      <a href="#reflection">預習單</a>
+    </nav>
+
+    <section id="mission" class="section-band">
+      <div class="section-title">
+        <p class="step">Step 1</p>
+        <h2>今天的預習任務</h2>
+      </div>
+      <div class="mission-grid">
+        <article class="mission-card">
+          <h3>真實情境</h3>
+          <p>班上可能會遇到閱讀角太吵、下課奔跑、借東西沒有先問、冷氣使用意見不同等問題。這些問題都和「規範」有關。</p>
+        </article>
+        <article class="mission-card">
+          <h3>核心問題</h3>
+          <p>我們可以怎麼訂出公平、清楚、大家願意遵守的班級規範？</p>
+        </article>
+        <article class="mission-card">
+          <h3>完成目標</h3>
+          <p>完成自學後，請帶著一個你觀察到的班級問題，下一堂課和小組討論。</p>
+        </article>
+      </div>
+      <button class="complete-btn" data-complete="mission">我了解任務了</button>
+    </section>
+
+    <section id="learn" class="section-band pale">
+      <div class="section-title">
+        <p class="step">Step 2</p>
+        <h2>預習重點</h2>
+      </div>
+      <div class="concept-grid">
+        <article>
+          <span class="icon">1</span>
+          <h3>班級公約</h3>
+          <p>班級公約是全班一起討論出來的規範，可以幫助大家維持學習環境和班級秩序。</p>
+        </article>
+        <article>
+          <span class="icon">2</span>
+          <h3>校園規範</h3>
+          <p>學校會訂出校規，也會在遊樂器材、危險角落、社團活動等地方設立規則，保護大家的安全。</p>
+        </article>
+        <article>
+          <span class="icon">3</span>
+          <h3>規範會改變</h3>
+          <p>有些規範會因為時代、需求或安全考量而調整。想修改規範時，要先討論、提出建議，再依照流程處理。</p>
+        </article>
+        <article>
+          <span class="icon">4</span>
+          <h3>班級自治</h3>
+          <p>班級自治是學生一起管理班級事務，例如選幹部、開班會、討論提案和表決。</p>
+        </article>
+      </div>
+
+      <div class="rule-box">
+        <h3>好規範的 4 個條件</h3>
+        <ul>
+          <li><strong>具體：</strong>看得出要做什麼。</li>
+          <li><strong>明確：</strong>大家不容易誤解。</li>
+          <li><strong>公平：</strong>不是只方便少數人。</li>
+          <li><strong>合規：</strong>不違反校規或法律。</li>
+        </ul>
+      </div>
+      <button class="complete-btn" data-complete="learn">我讀完重點了</button>
+    </section>
+
+    <section id="check" class="section-band">
+      <div class="section-title">
+        <p class="step">Step 3</p>
+        <h2>情境判斷小測驗</h2>
+      </div>
+      <div class="quiz" data-quiz>
+        <div class="question">
+          <h3>1. 「上課不要亂」是一條好的班級公約嗎？</h3>
+          <button data-answer="wrong">是，因為很簡短</button>
+          <button data-answer="right">還不夠好，因為不夠具體</button>
+        </div>
+        <div class="question">
+          <h3>2. 班級表決後，少數不同意的同學應該怎麼辦？</h3>
+          <button data-answer="right">遵守結果，但大家也要想辦法照顧他的需求</button>
+          <button data-answer="wrong">完全不能再說自己的想法</button>
+        </div>
+        <div class="question">
+          <h3>3. 如果發現校園規範不適合現在的情況，可以怎麼做？</h3>
+          <button data-answer="wrong">自己不遵守就好</button>
+          <button data-answer="right">提出建議，和同學、老師討論</button>
+        </div>
+      </div>
+      <p id="quizResult" class="feedback" aria-live="polite"></p>
+      <button class="complete-btn" data-complete="check">我完成小測驗了</button>
+    </section>
+
+    <section id="meeting" class="section-band pale">
+      <div class="section-title">
+        <p class="step">Step 4</p>
+        <h2>班會流程排序</h2>
+      </div>
+      <p class="hint">請依照正確順序點選班會流程。</p>
+      <div class="sequence" id="sequenceButtons">
+        <button data-order="3">提案討論</button>
+        <button data-order="1">主席宣布開會</button>
+        <button data-order="5">宣布結果</button>
+        <button data-order="2">主席與幹部報告</button>
+        <button data-order="4">表決</button>
+      </div>
+      <div class="sequence-output">
+        <h3>我的排序</h3>
+        <ol id="sequenceList"></ol>
+      </div>
+      <p id="sequenceResult" class="feedback" aria-live="polite"></p>
+      <button id="resetSequence" class="secondary-btn">重新排序</button>
+      <button class="complete-btn" data-complete="meeting">我完成流程練習了</button>
+    </section>
+
+    <section id="reflection" class="section-band">
+      <div class="section-title">
+        <p class="step">Step 5</p>
+        <h2>我的預習單</h2>
+      </div>
+      <form class="reflection-form">
+        <label>
+          我觀察到的班級或校園問題
+          <textarea id="problem" rows="3" placeholder="例如：閱讀角有人太大聲，想看書的同學會被影響。"></textarea>
+        </label>
+        <label>
+          這個問題影響了誰？
+          <textarea id="impact" rows="3" placeholder="例如：影響想安靜閱讀的同學，也影響班級秩序。"></textarea>
+        </label>
+        <label>
+          我想到的改善方法
+          <textarea id="idea" rows="3" placeholder="例如：閱讀角只能用小聲音說話，看完書要放回原位。"></textarea>
+        </label>
+      </form>
+      <div class="actions">
+        <button id="saveReflection" class="complete-btn" data-complete="reflection" type="button">儲存我的預習單</button>
+        <button id="printPage" class="secondary-btn" type="button">列印或存成 PDF</button>
+      </div>
+      <p id="saveStatus" class="feedback" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>預習提醒：下一堂課請帶著你的觀察，和小組一起設計「班級規範改善提案」。</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
